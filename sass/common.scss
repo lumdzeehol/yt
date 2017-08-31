@@ -1,0 +1,298 @@
+$black: #222222;
+$grayBlack: #323333;
+$gray: #333333;
+$top_color: #666666;
+$main_font:'微软雅黑';
+$top_ftsize: 12px;
+
+/* 公共样式 */
+body{
+    min-width: 1190px;
+    font-family: $main_font;
+}
+body,div,ul,li,p{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type: none;
+}
+a{text-decoration: none;}
+.container{
+    width: 1190px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+}
+
+/* 头部 */
+#hd{
+    width: 100%;
+    color: $top_color;
+    font-size: $top_ftsize;
+    #hd_top{
+        background-color: #EEEEEE;
+        border-bottom: 1px solid #fff;
+        .container{
+            line-height: 34px;
+            height: 36px;   
+            a{
+                color: $top_color;
+            }
+        }
+    }
+}
+/* 顶部左 */
+.hdtop_left{
+    padding-left: 6px;
+    position: relative;
+    li{
+        float: left;
+        position: relative;
+        a{
+            padding-left: 27px;
+            margin: 0 6px;
+            display: block;
+            height: 100%;
+        }
+    }
+}
+.separator{
+    height: 14px;
+    line-height: 14px;
+    position: relative;
+    font-size: 0;
+    width: 0;
+    border-left: 1px solid #ccc;
+    top: 10px; 
+    margin: 0 4px;
+}
+/* 头部左图标 */
+.head_logo{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: 6px;
+    top: 7px;
+    display: block;
+}
+.yt_home i{
+    background: url('../imgs/header-02.png') right top;
+}
+.wechat_top a{
+    width: 40px;
+    padding: 0 6px 0 31px;
+}
+.wechat_top i{
+    background: url('../imgs/header-02.png') right -58px;   
+}
+.wechat_top{
+    position: relative;
+}
+/* 微信二维码 */
+.wechat_qrcode{
+    display: none;
+    padding: 0px 10px 0 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px #ccc;
+    .qr_tp{
+        position: relative;
+        a{
+            padding-left: 27px;
+            margin: 0 6px;
+            display: block;
+            height: 100%;
+            i{
+                background: url(../imgs/header-02.png) right -88px;
+            }
+        }        
+    }
+    .qr_bm{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+/* 手机二维码 */
+.phone_qrcode{
+    display: none;
+    padding: 0px 10px 0 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px 0px #ccc;
+    .qr_tp{
+        position: relative;
+        a{
+            padding-left: 27px;
+            margin: 0 6px;
+            display: block;
+            height: 100%;
+            i{
+                background: url(../imgs/phone.png) right bottom;
+            }
+        }        
+    }
+    .qr_bm{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+
+.hdtop_left .phone_top a{
+    width: 72px;
+    padding-left: 28px;
+    margin: 0;
+}
+.phone_top i{
+    background: url('../imgs/phone.png') left top;
+    width: 13px;
+    height: 20px;
+    left: 6px;
+}
+.phone_top b{
+    left: 82px;
+}
+.top_arrow{
+    width: 9px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: 62px;
+    top: 16px;
+    background: url('../imgs/header-02.png') -175px -111px;
+}
+
+/* 顶部右 */
+.hdtop_right{
+    li{
+        float: left;
+        >a{
+        padding: 8px 10px 0px;
+        display: block;
+        line-height: 18px;
+        height: 26px;
+        }
+        &.user_log{
+            padding-right: 10px;
+            a{
+                padding: 0;
+                display: inline;
+                
+            }
+            a:first-of-type{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.my_yt{
+    position: relative;
+    width: 62px;
+}
+.my_yttag{
+    height: 36px;
+    position: relative;
+    a{
+        padding: 8px 10px 0px;
+            display: block;
+            line-height: 18px;
+            height: 26px;
+    }
+    .myyt_list{
+        display: none;
+        width: 82px;
+        background-color: #fff;
+        position: absolute;
+        box-shadow: 0px 1px 3px 0px #ccc;
+        left: 0;
+        top: 0;
+        ul{
+            li{
+                width: 72px;
+                padding-left: 10px;
+                    border-bottom: 1px solid #ddd;
+                a{
+                    padding: 0;
+                    height: 29px;
+                    line-height: 29px;
+                }
+            }
+            li:last-child{
+                border-bottom: 0 none;
+            }
+        }
+    }
+    
+}
+
+
+/* 头部banner */
+#top_banner{
+    a{
+        display: block;
+        height: 80px;
+        background: url(../imgs/85b8b267-379b-4f02-aa8a-593916d3898a.jpg) center top;
+    }
+}
+
+/* 头部主体 */
+#top_main{
+    .container{
+        height: 120px;
+        h1{
+            float:left;
+            height: 76px;
+            width: 215px;
+            margin-top: 21px;
+            a{
+                text-indent: -999px;
+                display:block;
+                height: 100%;
+                width: 100%;
+                background: url(../imgs/header-20160223.gif);
+            }
+        }
+    }
+}
+.yt_cart{
+    float: right;
+    margin: 40px 0 0 18px;
+    width: 160px;
+    background-color: $grayBlack;
+    position: relative;
+    z-index: 10;
+    a{
+        line-height: 34px;
+        color:#fff;
+        display: block;
+        background: url(../imgs/header-02.png) -56px -76px;
+        span{
+            display: block;
+            height: 34px;
+            padding-left: 48px;
+            strong{
+                vertical-align: middle;
+                font-size: 16px;
+                font-weight: normal;
+                color: #E5004F;
+                padding: 0 5px;
+            }
+        }
+    }
+}
