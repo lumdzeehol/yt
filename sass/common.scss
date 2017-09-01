@@ -2,8 +2,10 @@ $black: #222222;
 $grayBlack: #323333;
 $gray: #333333;
 $top_color: #666666;
+$main_background: #e5e5e5;
 $main_font:'微软雅黑';
 $top_ftsize: 12px;
+
 
 /* 公共样式 */
 body{
@@ -270,24 +272,23 @@ a{text-decoration: none;}
         }
     }
 }
-.yt_cart{
+.yt_minicart{
     float: right;
     margin: 40px 0 0 18px;
     width: 160px;
     background-color: $grayBlack;
     position: relative;
     z-index: 10;
-    a{
+    .minishop{
         line-height: 34px;
         color:#fff;
         display: block;
-        background: url(../imgs/header-02.png) -56px -76px;
-        span{
-            display: block;
+        background: url(../imgs/header-02.png) -56px -75px;
+        >span{
             height: 34px;
             padding-left: 48px;
-            strong{
-                vertical-align: middle;
+            span{
+                vertical-align: bottom;
                 font-size: 16px;
                 font-weight: normal;
                 color: #E5004F;
@@ -295,4 +296,37 @@ a{text-decoration: none;}
             }
         }
     }
+    .minibags{
+        position: absolute;
+        width: 290px;
+        right: 0 ;
+        top: 34px;
+        background: #fff;
+        box-shadow: 0px 0px 8px #ccc;
+    }
+    .bags_nothing{
+        text-align: center;
+        line-height: 70px;
+        height: 70px;
+    }
+    .bags_nothing::before{
+        content:"购物袋中还没有商品，赶快选购吧！";
+    }
+}
+
+
+
+
+
+/* main */
+#main{
+    background-color: $main_background;
+    height: 500px;
+}
+
+/* footer */
+#ft{
+    box-sizing: border-box;
+    height: 320px;
+    padding-top: 30px;
 }
