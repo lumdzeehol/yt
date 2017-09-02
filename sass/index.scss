@@ -1,0 +1,116 @@
+#ldcarousel{
+    height: 470px;
+}
+.f-pic{
+    position: absolute;
+    left: 1106.5px;
+    top: 0;
+    z-index: 10;
+    width: 200px;
+    height: 470px;
+    a{
+        display: block;
+        height: 470px;
+        img{
+            display: block;
+            width: 100%;
+        }
+    }   
+}
+
+$mainblock_mgtop: 20px;
+.yt_contsq{
+    margin-top: $mainblock_mgtop;
+    .floor_title{
+        height: 36px;
+        padding: 8px 5px;
+        background-color: #fff;
+        a{
+            width: 100%;
+            height: 100%;
+            display: block;
+            line-height: 36px;
+            h6{
+                width: 380px;
+                height: 36px;
+                text-indent: -999px;
+            }
+        }    
+    }
+}
+.yt_goodslist{
+    padding-top: 10px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.yt_goodscell{
+    background-color: #fff;
+    width: 230px;
+    height: 370px;
+    margin: 0 10px 10px 0;
+    font-size: 12px;
+    .goods_pic{
+        width: 210px;
+        height: 270px;
+        margin: 0 auto;
+        a{
+            display: block;
+            width: 210px;
+            height: 270px;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .goods_msg{
+        padding: 5px 10px 0;
+        .goods_name{
+            height:24px;
+            line-height: 24px;
+            a{
+                color: #333333;
+            }
+        }
+        .goods_des{
+            height: 36px;
+            a{
+                color: #666666;
+            }
+        }
+        .goods_price{
+            padding-top: 5px;
+            height: 28px;
+            .cur_prc{
+                float: left;
+                color: #E5004F;
+                font-size: 18px;
+            }
+            .ori_prc{
+                float: right;
+                color: #999999;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.yt_zg{
+    .floor_title{
+        a{
+            h6{
+                background: url(../imgs/floor-tk.png) no-repeat;
+            }
+        }
+    }
+}
+.yt_mp{
+    .floor_title{
+        a{
+            h6{
+                background: url(../imgs/floor-all.png) no-repeat;
+            }
+        }
+    }   
+}

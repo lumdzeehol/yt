@@ -272,6 +272,7 @@ a{text-decoration: none;}
         }
     }
 }
+/* 购物车 */
 .yt_minicart{
     float: right;
     margin: 40px 0 0 18px;
@@ -283,7 +284,7 @@ a{text-decoration: none;}
         line-height: 34px;
         color:#fff;
         display: block;
-        background: url(../imgs/header-02.png) -56px -75px;
+        background: url(../imgs/header-02.png) -56px -76px;
         >span{
             height: 34px;
             padding-left: 48px;
@@ -297,6 +298,7 @@ a{text-decoration: none;}
         }
     }
     .minibags{
+        display: none;
         position: absolute;
         width: 290px;
         right: 0 ;
@@ -314,14 +316,172 @@ a{text-decoration: none;}
     }
 }
 
+/* 搜索栏 */
+.search_area{
+    width: 498px;
+    margin-top: 40px;
+    .search_bar{
+        border: 2px solid #323333;
+        height: 30px;
+        margin-bottom: 8px;
+        input{
+            float: left;
+            box-sizing: border-box;
+            padding: 0 6px;
+            border: 0 none;
+            width: 450px;
+            height: 30px;
+            font-size: 12px;
+        }
+        input::placeholder{
+            color: #ddd;
+        }
+        .search_btn{
+            padding: 0 ;
+            float: left;
+            height: 30px;
+            width: 44px;
+            border: 0 none;
+            background: url(../imgs/header-02.png) left -78px;
+        }
+    }
+    .s_keywords{
+        a{
+            color: #888888;
+            margin-right: 12px;
+            float: left;
+        }
+    }
 
+}
 
+/* 头部导航 */
+#top_nav{
+    position: relative;
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 1px solid $black;
+    /* 导航分类 */
+    .nav_cate{
+        float: left;
+        .nav_cate_title{
+            display: block;
+            width: 210px;
+            height: 40px;
+            font-size: 18px;
+            background: $black;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+    /* 导航分类列表 */
+    .nav_cate_list{
+        position: absolute;
+        z-index: 10;
+        top: 40px;
+        width: 210px;
+        height: 470px;
+        background:$gray; 
+        .catelist_cell{
+            padding-top: 17px;
+            box-sizing: border-box;
+            height: (470px/10);
+            a{  
+                float: left;
+                vertical-align: middle;
+                font-size: 16px;
+                color: #fff;
+                display: inline;
+                margin-left: 18px;
+                // line-height: 18px;
+                height: 20px;
+                em{
+    
+                    vertical-align: middle;
+                    display: inline-block;
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 5px;
+                    background: url(../imgs/header-02.png) no-repeat left -110px;
+                }
+            }
+            i{
+                float: left;
+                height: 16px;
+                font-size: 0;
+                border-left: 1px solid #999;
+                margin: 0 8px;
+                position: relative;
+                top: 4px;
+            }
+            a.cell_sub{
+                font-size: 12px;
+                margin-left: 0;
+                position: relative;
+                top: 4px;
+            }
+            span{
+                position: absolute;
+                right: 15px;
+                top: 25px;
+                display: block;
+                width: 6px;
+                height: 11px;
+                background: url(../imgs/header-02.png) -210px -112px;
+            }
+        }
+        .catelist_cell:hover{
+            background-color: #e5004f;
+            a{
+                em{
+                    background: url(../imgs/header-02.png) no-repeat left -128px;
+                }
+            }
+            span{
+                display: none;
+            }
+        }
+    }
+    .nav_list{
+        padding-left: 20px;
+        float: left;
+        height: 39px;
+        li{
+            padding: 0 15px;
+            position: relative;
+            float: left;
+            a{
+                display: block;
+                height: 26px;
+                padding: 10px 10px 0 10px;
+                color: $black;
+                font-size: 16px;
+            }
+            a:hover{
+                color: #e5004f;
+                height: 25px;
+                border-bottom: 4px solid #e5004f;
+            }
+        }
+    }
+    /* 导航右 */
+    .nav_r{
+        float: right;
+        height: 39px;
+        line-height: 39px;
+        a{
+            padding: 0 8px;
+            color: $grayBlack;
+            font-size: 14px;
+        }
+    }
+}
 
 
 /* main */
 #main{
     background-color: $main_background;
-    height: 500px;
 }
 
 /* footer */

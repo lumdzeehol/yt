@@ -1,0 +1,48 @@
+#ldcarousel{
+    height: 470px;
+    position: relative;
+}
+.ld_panel{
+    height: 470px;
+  
+    width: 100%;
+    /*display:  block;*/
+    position: absolute;
+    /*z-index: 0; */
+}
+.ld_panel a{
+    display: block;
+    margin:0 auto; 
+    width: 1190px;
+}
+.roll_btn{
+    display: block;
+    height: 50px;
+    width: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translate( 0, -50%); 
+    color: #fff;
+    cursor: pointer;
+}
+.page_contorl{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom:20px;
+}
+.pageitem{
+    float: left;
+    display: block;
+    margin: 1px;
+    width: 30px;
+    height: 8px;
+    background-color: #333333;
+}
+.pageitem_chosen{
+    background-color: #E5004F;
+}
