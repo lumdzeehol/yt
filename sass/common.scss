@@ -2,7 +2,7 @@ $black: #222222;
 $grayBlack: #323333;
 $gray: #333333;
 $top_color: #666666;
-$main_background: #e5e5e5;
+$main_background: rgb( 245, 245, 245);
 $main_font:'微软雅黑';
 $top_ftsize: 12px;
 
@@ -37,6 +37,10 @@ a{text-decoration: none;}
     clear: both;
     overflow: hidden;
     zoom: 1;
+}
+
+#doc{
+    background-color: rgb(245,245,245);
 }
 
 /* 头部 */

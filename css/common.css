@@ -40,6 +40,10 @@ a {
   zoom: 1;
 }
 
+#doc {
+  background-color: whitesmoke;
+}
+
 /* 头部 */
 #hd {
   width: 100%;
@@ -531,7 +535,7 @@ a {
 
 /* main */
 #main {
-  background-color: #e5e5e5;
+  background-color: whitesmoke;
 }
 
 /* footer */

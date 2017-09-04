@@ -49,7 +49,11 @@
 .yt_goodslist {
   padding-top: 10px;
   width: 1200px;
+}
+
+.yt_goodslist ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -94,6 +98,7 @@
 
 .yt_goodscell .goods_msg .goods_des {
   height: 36px;
+  overflow: hidden;
 }
 
 .yt_goodscell .goods_msg .goods_des a {
@@ -117,19 +122,53 @@
   font-size: 14px;
 }
 
-.yt_zg .floor_title a h6 {
+.yt_zg .floor_title h6 {
   background: url(../imgs/floor-tk.png) no-repeat;
 }
 
-.yt_mp .floor_title a h6 {
+.yt_mp .floor_title h6 {
   background: url(../imgs/floor-all.png) no-repeat;
+}
+
+.yt_nvz .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -46px;
+}
+
+.yt_nanz .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -92px;
+}
+
+.yt_xx .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -138px;
+}
+
+.yt_xb .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -184px;
+}
+
+.yt_hf .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -230px;
+}
+
+.yt_hw .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -276px;
+}
+
+.yt_ny .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -322px;
+}
+
+.yt_yt .floor_title h6 {
+  background: url(../imgs/floor-all.png) no-repeat 0px -368px;
 }
 
 /* 浮动导航 */
 .float_nav {
+  display: none;
   position: fixed;
-  right: 60px;
+  left: 50%;
   bottom: 20px;
+  margin-left: 600px;
   width: 50px;
   font-size: 12px;
 }
@@ -140,10 +179,11 @@
   height: 50px;
   margin-bottom: 4px;
   background-color: #ECECEC;
+  background-size: cover;
 }
 
 .float_nav .flnav_floor span {
-  display: block;
+  display: none;
   width: 50px;
   height: 50px;
   padding: 10px;
@@ -151,4 +191,48 @@
   box-sizing: border-box;
   background-color: #e5004f;
   color: #fff;
+}
+
+.flnav_zgtk {
+  background: url(../imgs/floor-nav-zg.png);
+}
+
+.flnav_ssmp {
+  background: url(../imgs/floor-nav.png);
+}
+
+.flnav_clnz {
+  background: url(../imgs/floor-nav.png) 0 -55px;
+}
+
+.flnav_jpnz {
+  background: url(../imgs/floor-nav.png) 0 -110px;
+}
+
+.flnav_ssxx {
+  background: url(../imgs/floor-nav.png) 0 -165px;
+}
+
+.flnav_clxb {
+  background: url(../imgs/floor-nav.png) 0 -220px;
+}
+
+.flnav_mrhf {
+  background: url(../imgs/floor-nav.png) 0 -275px;
+}
+
+.flnav_ydhw {
+  background: url(../imgs/floor-nav.png) 0 -330px;
+}
+
+.flnav_nyps {
+  background: url(../imgs/floor-nav.png) 0 -385px;
+}
+
+.flnav_kayt {
+  background: url(../imgs/floor-nav.png) 0 -440px;
+}
+
+.flnav_totop {
+  background: url(../imgs/floor-nav.png) 0 -495px;
 }
