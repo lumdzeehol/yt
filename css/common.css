@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(base.css);
 /* 公共样式 */
 body {
   min-width: 1190px;
@@ -49,6 +50,7 @@ a {
   width: 100%;
   color: #666666;
   font-size: 12px;
+  background-color: #fff;
 }
 
 #hd #hd_top {
@@ -141,6 +143,7 @@ a {
   margin: 0 6px;
   display: block;
   height: 100%;
+  color: #e5004f;
 }
 
 .wechat_qrcode .qr_tp a i {
@@ -250,6 +253,10 @@ a {
   display: block;
   line-height: 18px;
   height: 26px;
+}
+
+.my_yttag a:hover {
+  color: #e5004f;
 }
 
 .my_yttag .myyt_list {
@@ -432,7 +439,9 @@ a {
 }
 
 #top_nav .nav_cate_list .catelist_cell {
-  padding-top: 17px;
+  position: relative;
+  border-bottom: 1px solid #515151;
+  padding-top: 13px;
   box-sizing: border-box;
   height: 47px;
 }
@@ -473,10 +482,14 @@ a {
   top: 4px;
 }
 
+#top_nav .nav_cate_list .catelist_cell a.cell_sub:hover {
+  text-decoration: underline;
+}
+
 #top_nav .nav_cate_list .catelist_cell span {
   position: absolute;
   right: 15px;
-  top: 25px;
+  top: 20px;
   display: block;
   width: 6px;
   height: 11px;

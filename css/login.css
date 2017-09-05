@@ -1,0 +1,55 @@
+header {
+  height: 116px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+header .container h1 {
+  float: left;
+  margin-right: 5px;
+}
+
+header .container h1 a {
+  display: block;
+  width: 215px;
+  height: 76px;
+  text-indent: -999px;
+  background: url(../imgs/header-02.png);
+}
+
+header .container .welcome {
+  float: left;
+  width: 124px;
+  height: 24px;
+  margin-top: 52px;
+  background: url(../imgs/header-login.png) no-repeat;
+}
+
+header .container .header_right {
+  background: url(../imgs/register-header.png) 0px -20px no-repeat;
+  height: 76px;
+  width: 550px;
+  float: right;
+}
+
+#bd {
+  background-color: #F9F9F9;
+}
+
+#bd .container {
+  padding: 60px 0 50px;
+}
+
+#bd .container .reg_ad {
+  float: left;
+}
+
+#bd .container .reg_ad img {
+  display: block;
+  width: 780px;
+  height: 460px;
+}
+
+footer {
+  padding-top: 30px;
+}

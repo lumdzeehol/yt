@@ -1,0 +1,149 @@
+header {
+  height: 116px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+header .container h1 {
+  float: left;
+  margin-right: 5px;
+}
+
+header .container h1 a {
+  display: block;
+  width: 215px;
+  height: 76px;
+  text-indent: -999px;
+  background: url(../imgs/header-02.png);
+}
+
+header .container .welcome {
+  float: left;
+  width: 124px;
+  height: 24px;
+  margin-top: 52px;
+  background: url(../imgs/header-login.png) no-repeat;
+}
+
+header .container .header_right {
+  background: url(../imgs/register-header.png) 0px -20px no-repeat;
+  height: 76px;
+  width: 550px;
+  float: right;
+}
+
+#bd {
+  background-color: #F9F9F9;
+}
+
+#bd .container {
+  padding: 60px 0 50px;
+}
+
+#bd .container .reg_ad {
+  float: left;
+}
+
+#bd .container .reg_ad img {
+  display: block;
+  width: 780px;
+  height: 460px;
+}
+
+#register {
+  width: 385px;
+  height: 460px;
+  border-radius: 5px;
+  background-color: #F1F1F1;
+  float: right;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+#register .register_title {
+  text-align: center;
+  height: 37px;
+  line-height: 37px;
+  background-color: #fff;
+  border-bottom: 3px solid #e5004f;
+}
+
+#register .login {
+  width: 385px;
+  height: 39px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+#register .login a {
+  color: #e5004f;
+}
+
+#register #reg_form {
+  border-top: 1px solid #d2d2d2;
+}
+
+.field {
+  background-color: #fff;
+  padding-left: 20px;
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.field input {
+  border: 0 none;
+  outline: 0 none;
+}
+
+#getCode {
+  height: 28px;
+  line-height: 26px;
+  width: 90px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #666;
+  background: #fff;
+  font-size: 12px;
+  float: right;
+  margin: 8px 20px 0 0;
+  outline: none;
+}
+
+.use_explain {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+}
+
+#regBtn {
+  width: 80%;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  margin: 0 auto 15px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.regBtn_able {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+.regBtn_forbid {
+  background-color: #f1f1f1;
+  border: 1px solid red;
+  color: red;
+}
+
+footer {
+  padding-top: 30px;
+}

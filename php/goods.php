@@ -43,7 +43,7 @@
                     'count' => count($data_arr));
     echo json_encode($model,JSON_UNESCAPED_UNICODE);
 
-    // $result->close();
+    $result->close();
 
     $connect->close();
 
