@@ -387,6 +387,7 @@ a{text-decoration: none;}
     }
     /* 导航分类列表 */
     .nav_cate_list{
+        display: none;
         position: absolute;
         z-index: 10;
         top: 40px;

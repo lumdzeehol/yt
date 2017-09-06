@@ -22,7 +22,7 @@ header .container .welcome {
   width: 124px;
   height: 24px;
   margin-top: 52px;
-  background: url(../imgs/header-login.png) no-repeat;
+  background: url(../imgs/header-login.png) no-repeat 0px -24px;
 }
 
 header .container .header_right {

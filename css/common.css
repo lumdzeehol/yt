@@ -430,6 +430,7 @@ a {
 }
 
 #top_nav .nav_cate_list {
+  display: none;
   position: absolute;
   z-index: 10;
   top: 40px;

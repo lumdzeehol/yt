@@ -35,7 +35,7 @@ header{
     background-color: #F9F9F9;  
     .container{
         padding: 60px 0 50px;
-        .reg_ad{
+        .login_ad{
             float: left;
             img{
                 display: block;
@@ -45,6 +45,178 @@ header{
         }
     }
 }
+#login{
+    position: relative;
+    width: 385px;
+    height: 460px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    float: right;
+    overflow: hidden;
+    font-size: 14px;
+}
+.login_tab{
+    height: 40px;
+    display: flex;
+    text-align: center;
+    color: #999999;
+    background-color: #fff;
+    .tab_item{
+        height: 39px;
+        border-bottom: 1px solid #ccc;
+        line-height: 39px;
+        position: relative;
+        flex: 1;
+        cursor: pointer;
+        b{
+            position: absolute;
+            width: 1px;
+            height: 20px;
+            right: 0;
+            top: 50%;
+            margin-top: -10px;
+            background: #d2d2d2;
+        }
+        &.active{
+            height: 37px;
+            border-bottom: 3px solid $theme_color;
+            color: #333;
+        }
+    }
+}
+.login_cont{
+    line-height: 39px;
+    .login_user{
+        margin-top: 20px;
+        height: 59px;
+        box-sizing: border-box;
+        padding: 10px 18px;
+        border-top: 1px solid rgb(210,210,210);
+        border-bottom:1px solid rgb(210,210,210);
+        background: #fff;
+    }
+    .login_psw{
+        background: #fff;
+        height: 59px;
+        box-sizing: border-box;
+        padding: 10px 18px;
+        border-bottom:1px solid rgb(210,210,210);
+    }
+    img{
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    input{
+        font-size: 16px;
+        height: 30px;
+        border: 0 none;
+        outline: 0 none;
+    }
+}
+.login_btn{
+    height: 50px;
+    margin: 10px;
+    background: $theme_color;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;    
+    cursor: pointer;
+}
+.login_reg{
+    margin: 10px;
+    text-align: right;
+    a{
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        padding-right: 2px;
+    }
+    .forgetpsw{
+        float: left;
+        font-size: 16px;
+        padding-left: 10px;
+        color: #999;
+    }
+    .register{
+        float: right;
+        color: $theme_color;
+    }
+}
+
+.login_hz{
+    display: block;
+    // display: none;
+}
+.login_zhanghao{
+        display: none;
+    // display: block;
+}
+.login_QRcode{
+    display: none;
+    text-align: center;
+    p{
+        font-size: 14px;
+        padding-top: 30px;
+    }
+    img{
+        display: block;
+        height: 150px;
+        width: 150px;
+        margin: 10px auto 10px;
+    }
+    a{
+        padding: 0 5px;
+        color: rgb(102, 102, 102);
+    }
+}
+.login_cooperate{
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 0;
+    color: #999;
+    text-align: center;
+    .co_title{
+        position: relative;
+        height: 24px;
+        // text-align: center;
+        margin: 0 20px;
+        font-size: 12px;
+        h4{
+            position: relative;
+            z-index: 2;
+            height: 24px;
+            display: inline-block;
+            font-weight: normal;
+            line-height: 24px;
+            padding: 0 5px;
+            color: #999;
+            background: #fff;
+        }
+        p{
+            height: 1px; 
+            background: #ccc;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 12px;
+        }
+    }
+    a.co_link{
+        font-size: 12px;
+        color: #999;
+        display: inline-block;
+        height: 20px;
+        padding: 0 5px;
+    }
+}
+
 footer{
     padding-top: 30px;
 }

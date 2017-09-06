@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="../css/footer.css" />
         <link rel="stylesheet" type="text/css" href="../css/common.css" />
         <link rel="stylesheet" type="text/css" href="../css/login.css" />
-        <script src="../node_modules/requirejs/require.js" data-main="../js/register"></script>
+        <script src="../node_modules/requirejs/require.js" data-main="../js/login"></script>
     </head>
     <body>
         <header>
@@ -20,10 +20,62 @@
         </header>
         <div id="bd">
             <div class="container clearfix">
-                <div class="reg_ad">
+                <div class="login_ad">
                     <img src="../imgs/register-ad.jpg" alt="" />
                 </div>
-
+                <div id="login">
+                    <div class="login_tab">
+                        <div class="tab_item active">银泰护照<b></b></div>
+                        <div class="tab_item">银泰网账号<b></b></div>
+                        <div class="tab_item">APP扫码登录</div>
+                    </div>
+                    <div class="login_cont">
+                        <div class=" login_hz">
+                            <div class="login_user">
+                                <img src="../imgs/login_user.png" height="25" width="25" alt="" />
+                                <input type="text" id="hz_username" placeholder="请输入银泰护照号(手机号)"/>
+                            </div>
+                            <div class="login_psw">
+                                <img src="../imgs/login_psw.png" height="25" width="25" alt="" />
+                                <input type="password" id="hz_psw" placeholder="请输入密码"/>
+                            </div>
+                            <div id="hzLogin" class="login_btn">登 录</div>
+                            <div class="login_reg clearfix">
+                                <a href="##" class="forgetpsw">忘记密码</a>
+                                <a href="register.html" class="register">注册</a>
+                            </div>
+                        </div>
+                        <div class="login_zhanghao">
+                            <div class="login_user">
+                                <img src="../imgs/login_user.png" height="25" width="25" alt="" />
+                                <input type="text" id="hz_username" placeholder="请输入银泰网账号"/>
+                            </div>
+                            <div class="login_psw">
+                                <img src="../imgs/login_psw.png" height="25" width="25" alt="" />
+                                <input type="password" id="hz_psw" placeholder="请输入密码"/>
+                            </div>
+                            <div id="zhanghaoLogin" class="login_btn">登 录</div>
+                            <div class="login_reg clearfix">
+                                <a href="##" class="forgetpsw">忘记密码</a>
+                                <a href="register.html" class="register">注册</a>
+                            </div>
+                        </div>
+                        <div class="login_QRcode">
+                            <p>用银泰网APP 扫描二维码安全登录</p>
+                            <img src="../imgs/login_QRcode.png"  alt="" />
+                            <a href="##">下载银泰APP</a>|<a href="##">使用帮助</a>
+                        </div>
+                    </div>
+                    <div class="login_cooperate">
+                        <div class="co_title">
+                            <h4>您可以使用合作网站账号登录</h4>
+                            <p></p>
+                        </div>
+                        <a href="##" class="co_link">QQ</a>|
+                        <a href="##" class="co_link">支付宝</a>|
+                        <a href="##" class="co_link">微博</a>
+                    </div>
+                </div>
             </div>
 
         </div>

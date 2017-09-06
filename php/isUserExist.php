@@ -12,4 +12,8 @@
         $rt = array('status'=>'succeed','errorMsg'=>'');
         echo json_encode($rt,JSON_UNESCAPED_UNICODE);
     }
+    $result->close();
+
+    $connect->close();
+
 ?>

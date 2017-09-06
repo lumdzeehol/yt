@@ -1,0 +1,66 @@
+#bd {
+  background: #eee;
+}
+
+#bd .container {
+  background: #F4F4F4;
+}
+
+.crumbs {
+  height: 46px;
+  line-height: 46px;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.crumbs span {
+  margin-right: 3px;
+}
+
+.crumbs span a {
+  color: #666;
+}
+
+.yt_goods {
+  background: #fff;
+}
+
+.yt_goods .goods_main {
+  width: 965px;
+  height: 585px;
+  box-sizing: border-box;
+  padding: 20px 10px 10px 0;
+}
+
+.yt_picbox {
+  float: left;
+  width: 435px;
+  height: 512px;
+}
+
+.yt_picbox .yt_pictab {
+  width: 328px;
+  height: 512px;
+  margin: 0 auto;
+}
+
+.yt_picbox .yt_pictab .pic_album {
+  width: 100%;
+  height: 100%;
+}
+
+.pic_show {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.pic_show img {
+  width: 300px;
+  height: 400px;
+}
+
+.pic_photos {
+  width: 328px;
+  margin-top: 10px;
+}

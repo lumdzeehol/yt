@@ -1,0 +1,54 @@
+#bd{
+    background:#eee;
+    .container{
+        background: #F4F4F4;
+    }
+}
+.crumbs{
+    height: 46px;
+    line-height: 46px;
+    font-size: 12px;
+    padding-left: 20px;
+    span{   
+        margin-right: 3px;
+        a{
+            color: #666;
+        }
+    }
+}
+.yt_goods{
+    background: #fff;
+    .goods_main{
+        width: 965px;
+        height: 585px;
+        box-sizing: border-box;
+        padding: 20px 10px 10px 0;
+    }
+}
+.yt_picbox{
+    float: left;
+    width: 435px;
+    height: 512px;
+    .yt_pictab{
+        width: 328px;
+        height: 512px;
+        margin: 0 auto;
+        .pic_album{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.pic_show{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    img{
+        width: 300px;
+        height: 400px;
+    }
+}
+.pic_photos{
+    width: 328px;
+    margin-top: 10px;
+}

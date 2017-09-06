@@ -9,6 +9,9 @@ require(['config'],function(){
         var $flnav = $('.float_nav');
         var $flnavItem = $('.flnav_floor').not('.flnav_totop');
         var $totop = $('.flnav_floor').last();
+        var $nav = $('.nav_cate_list').first();
+        $nav.css('display', 'block');
+
 
         /*楼层集合*/
         var $cont_sq = $('.yt_contsq');
