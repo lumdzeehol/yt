@@ -1,0 +1,41 @@
+.ld-zoom-small {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.ld-zoom-small img {
+  width: 300px;
+  height: 400px;
+}
+
+.ld-zoom-big{
+    display: none;
+    left: 310px;
+    top: 0;
+    z-index: 10;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border: 1px solid #ccc;
+}
+.ldbig-zoomer{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.ldbig-zoomer img{
+    width: 1200px;
+    height: auto;
+    display: block;
+}
+.ld-mousezoom{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, .8); 
+}

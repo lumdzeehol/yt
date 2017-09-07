@@ -8,38 +8,6 @@ $top_ftsize: 12px;
 
 @import url(base.css);
 
-/* 公共样式 */
-body{
-    min-width: 1190px;
-    font-family: $main_font;
-}
-body,div,ul,li,p{
-    margin: 0;
-    padding: 0;
-}
-ul,li{
-    list-style-type: none;
-}
-a{text-decoration: none;}
-.container{
-    width: 1190px;
-    margin: 0 auto;
-}
-.fl{
-    float: left;
-}
-.fr{
-    float: right;
-}
-.clearfix:after{
-    content: '';
-    height: 0;
-    display: block;
-    clear: both;
-    overflow: hidden;
-    zoom: 1;
-}
-
 #doc{
     background-color: rgb(245,245,245);
 }
@@ -198,6 +166,19 @@ a{text-decoration: none;}
         height: 26px;
         }
         &.user_log{
+            display: block;
+            padding-right: 10px;
+            a{
+                padding: 0;
+                display: inline;
+                
+            }
+            a:first-of-type{
+                margin-right: 10px;
+            }
+        }
+        &.user_havelog{
+            display: none;
             padding-right: 10px;
             a{
                 padding: 0;
@@ -394,6 +375,9 @@ a{text-decoration: none;}
         width: 210px;
         height: 470px;
         background:$gray; 
+        &:hover{
+            display: block;
+        }
         .catelist_cell{
             position: relative;
             border-bottom: 1px solid #515151;

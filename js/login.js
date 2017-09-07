@@ -1,5 +1,6 @@
 require(['config'],function(){
-    require(['jquery'],function($){
+    require(['jquery','Cookie'],function($,Cookie){
+        console.dir(Cookie);
         var $tab_item = $('.tab_item');
         var $login_cont = $('.login_cont').children();
         /*绑定事件*/
@@ -47,6 +48,8 @@ require(['config'],function(){
                     return false;
                 }else if (response['status']==='succeed') {
                     alert('登录成功');
+                    Cookie.set('username',$hz_user.val(),'\/');
+                    Cookie.set('userid',response['user_id'],'\/');
                     window.location.href="../index.html";
                 }        
             })

@@ -1,46 +1,5 @@
 @charset "UTF-8";
 @import url(base.css);
-/* 公共样式 */
-body {
-  min-width: 1190px;
-  font-family: "微软雅黑";
-}
-
-body, div, ul, li, p {
-  margin: 0;
-  padding: 0;
-}
-
-ul, li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 1190px;
-  margin: 0 auto;
-}
-
-.fl {
-  float: left;
-}
-
-.fr {
-  float: right;
-}
-
-.clearfix:after {
-  content: '';
-  height: 0;
-  display: block;
-  clear: both;
-  overflow: hidden;
-  zoom: 1;
-}
-
 #doc {
   background-color: whitesmoke;
 }
@@ -226,6 +185,7 @@ a {
 }
 
 .hdtop_right li.user_log {
+  display: block;
   padding-right: 10px;
 }
 
@@ -235,6 +195,20 @@ a {
 }
 
 .hdtop_right li.user_log a:first-of-type {
+  margin-right: 10px;
+}
+
+.hdtop_right li.user_havelog {
+  display: none;
+  padding-right: 10px;
+}
+
+.hdtop_right li.user_havelog a {
+  padding: 0;
+  display: inline;
+}
+
+.hdtop_right li.user_havelog a:first-of-type {
   margin-right: 10px;
 }
 
@@ -437,6 +411,10 @@ a {
   width: 210px;
   height: 470px;
   background: #333333;
+}
+
+#top_nav .nav_cate_list:hover {
+  display: block;
 }
 
 #top_nav .nav_cate_list .catelist_cell {

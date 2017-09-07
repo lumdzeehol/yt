@@ -1,6 +1,17 @@
 require(['config'],function(){
     
-    require(['jquery','ld-carousel'],function($,Carousel){
+    require(['jquery','ld-carousel','Cookie'],function($,Carousel,Cookie){
+
+        if (Cookie.get('username').length>0) {
+            $('.hdtop_right').children('.user_log').css('display', 'none');
+            $('.hdtop_right').children('.user_havelog').css('display', 'block').children('a').eq(0).html(Cookie.get('username'));
+            $('.hdtop_right').children('.user_havelog').children('a').eq(1).click(function() {
+                Cookie.remove('username');
+                Cookie.remove('userid');
+                window.location.href = "//localhost/yintai";
+            });
+        }
+
         /*初始化轮播插件*/
         var carousel = new Carousel({imgs:['imgs/banner-01.jpg','imgs/banner-02.jpg'],bgimgs:['imgs/bg-01.jpg','imgs/bg-02.jpg']}).init();
 

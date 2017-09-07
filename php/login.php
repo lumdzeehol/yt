@@ -16,7 +16,7 @@
             $rt = array('status'=>'failed','errorMsg'=>'密码错误');
             echo json_encode($rt,JSON_UNESCAPED_UNICODE);
         }else{
-            $rt = array('status'=>'succeed','errorMsg'=>'登录成功');
+            $rt = array('status'=>'succeed','errorMsg'=>'登录成功','user_id'=>$data[0]['id']);
             echo json_encode($rt,JSON_UNESCAPED_UNICODE);
         }
     }

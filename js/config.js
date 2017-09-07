@@ -1,6 +1,13 @@
 require.config({
     paths:{
         jquery:"../node_modules/jquery/dist/jquery",
-        "ld-carousel":"../lib/ld-carousel/ld-carousel"
+        "ld-carousel":"../lib/ld-carousel/ld-carousel",
+        Cookie:"cookies",
+        Ldzoom:"../lib/ld-zoom/ld-zoom"
+    },
+    shim:{
+        Cookie:{
+            exports:"Cookie"
+        }
     }
 });
