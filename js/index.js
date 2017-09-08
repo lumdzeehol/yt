@@ -1,7 +1,7 @@
 require(['config'],function(){
     
     require(['jquery','ld-carousel','Cookie'],function($,Carousel,Cookie){
-
+             
         if (Cookie.get('username').length>0) {
             $('.hdtop_right').children('.user_log').css('display', 'none');
             $('.hdtop_right').children('.user_havelog').css('display', 'block').children('a').eq(0).html(Cookie.get('username'));

@@ -1,0 +1,35 @@
+$background_color: #eee;
+#bd{
+    background: $background_color;
+    .container{
+        width: 980px;
+    }
+}
+.yt_qrcode{
+    margin-bottom: 25px;
+}
+.cartwrapper{
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cart_step{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.cart_box{
+    .cartbox_cate{
+        font-size: 12px;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        background: #666;   
+        input{
+            vertical-align: middle;
+        }
+    }
+}
+.all_clk{
+    padding-left: 27px;
+    width: 103px;
+}

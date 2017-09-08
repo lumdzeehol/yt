@@ -366,6 +366,9 @@ $top_ftsize: 12px;
             line-height: 40px;
         }
     }
+    .nav_cate:hover+.nav_cate_list{
+        display: block;
+    }
     /* 导航分类列表 */
     .nav_cate_list{
         display: none;
@@ -375,9 +378,7 @@ $top_ftsize: 12px;
         width: 210px;
         height: 470px;
         background:$gray; 
-        &:hover{
-            display: block;
-        }
+
         .catelist_cell{
             position: relative;
             border-bottom: 1px solid #515151;

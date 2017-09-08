@@ -5,7 +5,7 @@
     margin: 0 auto;
 }
 
-.ld-zoom-small img {
+.ld-zoom-small>img {
   width: 300px;
   height: 400px;
 }
@@ -19,11 +19,12 @@
     height: 400px;
     width: 400px;
     border: 1px solid #ccc;
+    overflow: hidden;
 }
 .ldbig-zoomer{
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
+    position: absolute;
+    width: 1200px;
+    /*height: 400px;*/
 }
 .ldbig-zoomer img{
     width: 1200px;

@@ -3,7 +3,9 @@ require.config({
         jquery:"../node_modules/jquery/dist/jquery",
         "ld-carousel":"../lib/ld-carousel/ld-carousel",
         Cookie:"cookies",
-        Ldzoom:"../lib/ld-zoom/ld-zoom"
+        Ldzoom:"../lib/ld-zoom/ld-zoom",
+        headlogin:"headlog",
+        loadCart:"loadCart"
     },
     shim:{
         Cookie:{

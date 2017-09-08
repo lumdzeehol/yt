@@ -63,6 +63,7 @@ $theme_color: #e5004f;
         padding: 0 20px;
         .scrollclip{
             height: 100%;
+            position: relative;
             overflow: hidden;   
         }
         /* 滚动按钮 */
@@ -72,6 +73,7 @@ $theme_color: #e5004f;
             position: absolute;
             top: 50%;
             margin-top: -9px;
+            cursor: pointer;
         }
         .scroll_lt{
             background: url(../imgs/detail-carousel-arrow.png) no-repeat 0px -28px;
@@ -91,6 +93,8 @@ $theme_color: #e5004f;
 }
 /* 滚动条 */
 .photolist{
+    position: absolute;
+    left: 0;    
     width: 432px;
     .photocell{
         padding: 0 5px;
@@ -106,6 +110,9 @@ $theme_color: #e5004f;
                 width: 40px;
                 height: auto;
                 margin: 4px auto 0;
+            }
+            &:hover{
+                border: 1px solid #999;
             }
         }
     }
