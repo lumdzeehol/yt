@@ -4,7 +4,6 @@
         $good_id = $_POST['goodid'];
         $user_id = $_POST['userid'];
         $count = $_POST['count'];
-
         $searchQuery = "SELECT * FROM cart WHERE good_id=$good_id";
         $resSearch = $connect->query($searchQuery);
         $data = $resSearch->fetch_all(MYSQLI_ASSOC);
@@ -17,7 +16,8 @@
         }else{
             $insertQuery = "INSERT INTO cart (id,good_id,user_id,count) VALUES (null,$good_id,$user_id,$count)";
             $resInsert = $connect->query($insertQuery);
-            if (!$result) {
+            if (!$resInsert) {
+                echo json_encode(array('status'=>'failed'));
                 die( json_encode("无法插入数据:".$connect->error));
             }
         }

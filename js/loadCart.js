@@ -1,5 +1,4 @@
 define(['jquery','Cookie'],function($,Cookie){
-    console.log(5555);
     function loadCart(){
         $cart = $('.yt_minicart');
         $.ajax({

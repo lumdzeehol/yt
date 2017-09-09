@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url("footer.css");
+#bd {
+  background: #F4F4F4;
+}
+
+.list_crumbs {
+  height: 51px;
+  line-height: 41px;
+}
+
+.first {
+  box-sizing: border-box;
+  height: 51px;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+.first div {
+  float: left;
+}
+
+.first div a {
+  color: #666;
+}
+
+.first div a span {
+  color: #E4004F;
+  font-weight: bold;
+}
+
+.first .sp_num {
+  padding-left: 23px;
+}
+
+.fltop_nav {
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  background: #5c5c5c;
+  font-size: 12px;
+}
+
+.fltop_nav ul li {
+  cursor: pointer;
+  border-right: 1px solid #747474;
+  float: left;
+  height: 35px;
+  padding: 0 20px;
+}
+
+.fltop_nav ul .good_default:hover {
+  color: #DC3C5A;
+}
+
+.fltop_nav ul .good_selected {
+  background: #E5004F;
+}
+
+.fltop_nav ul .check_default {
+  position: relative;
+  float: left;
+  padding: 0 12px 0 30px;
+}
+
+.fltop_nav ul .check_default i {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  display: block;
+  width: 13px;
+  height: 13px;
+  overflow: hidden;
+  background: url(../imgs/prolist-check.jpg) 0 0 no-repeat;
+}
+
+.fltop_nav ul .miaohuo {
+  width: 55px;
+  background: url(../imgs/miao.jpg) 64px 5px no-repeat;
+}
+
+.fltop_nav ul .prolist_search {
+  padding: 5px 0;
+  height: 23px;
+}
+
+.fltop_nav ul .prolist_search input {
+  padding: 0;
+  height: 100%;
+  border: 0 none;
+  float: left;
+}
+
+.fltop_nav ul .prolist_search button {
+  font-size: 12px;
+  color: #fff;
+  border: 0 none;
+  height: 100%;
+  float: left;
+  background-color: #2f2f2f;
+}
+
+/* 列表主题 */
+.p-list {
+  margin-top: 24px;
+}
+
+.p-listcell {
+  width: 228px;
+  border: 2px solid #f4f4f4;
+  float: left;
+  margin: 3px;
+  position: relative;
+  background: #fff;
+}
+
+.p-listcell .p-listImgBig {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.p-listcell .p-listImgBig a {
+  height: 304px;
+  display: block;
+}
+
+.p-listcell .p-listImgBig a img {
+  display: block;
+  width: 228px;
+  border: 0;
+}
+
+.p-listcell .p-listPrice {
+  padding: 0 12px 5px;
+  font-size: 12px;
+}
+
+.p-listcell .p-listPrice strong {
+  color: #e5004f;
+  padding-right: 20px;
+}
+
+.p-listcell .p-listPrice del {
+  color: #999;
+}
+
+.p-listcell .p-listTxt {
+  margin-bottom: 8px;
+  height: 34px;
+  overflow: hidden;
+  padding: 0 12px;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.p-listcell .p-listTxt a {
+  color: #666;
+  text-decoration: none;
+}
+
+.p-listcell .p-listCustomIcon {
+  width: 52px;
+  height: 54px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.p-listcell .p-listCustomIcon span {
+  margin-left: 12px;
+  display: block;
+  width: 40px;
+  height: 54px;
+  background: url(../imgs/customicon.png) no-repeat 0 -108px;
+}
+
+.p-listcell .p-listCustomIcon span em {
+  font-style: normal;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  color: #fff;
+  width: 40px;
+  vertical-align: middle;
+  padding-top: 5px;
+}
